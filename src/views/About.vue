@@ -18,7 +18,7 @@
           </div>
 
           <div class="download">
-            <a target="_blank" style="text-decoration: none" href="https://drive.google.com/file/d/1wKq1BD9EpznCBo-T1BSARQNi1ylLdTNu/view?usp=sharing"><el-button type="primary" plain>Download CV</el-button></a>
+            <a target="_blank" style="text-decoration: none" href="https://drive.google.com/file/d/1wKq1BD9EpznCBo-T1BSARQNi1ylLdTNu/view?usp=sharing"><el-button size="large" type="primary" plain>Download CV</el-button></a>
           </div>
 
 

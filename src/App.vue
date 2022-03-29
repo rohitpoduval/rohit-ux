@@ -12,9 +12,6 @@ export default {
   }
 }
 
-window.addEventListener('contextmenu', function (e) { 
-  e.preventDefault(); 
-}, false);
 
 </script>
 
