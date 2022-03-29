@@ -8,9 +8,9 @@
     
     <div class="social">
       <ul>
-        <li><a href="https://www.instagram.com/rohit.poduval/"><img alt="Vue logo" src="../assets/1.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
-        <li><a href="https://www.linkedin.com/in/rohit-poduval"><img alt="Vue logo" src="../assets/2.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
-        <li><a href="https://www.behance.net/rohitpoduval21"><img alt="Vue logo" src="../assets/3.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
+        <li><a href="https://www.linkedin.com/in/rohit-poduval"><img alt="linkedIN logo" src="../assets/2.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
+        <li><a href="https://www.behance.net/rohitpoduval21"><img alt="behance logo" src="../assets/3.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
+                <li><a href="https://www.instagram.com/rohit.poduval/"><img alt="instagram logo" src="../assets/1.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
       </ul>
 
       <div class="resume">
