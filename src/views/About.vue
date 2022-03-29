@@ -2,11 +2,10 @@
   <div class="main">
     
     <el-row :gutter=20>
+
       <el-col :span="10"> 
         <div class="profile">
-          <!-- <div class="profile-logo">
-            <img alt="Vue logo" src="../assets/logo.jpg" style="height:100px; width:100px; border-radius: 80px;">
-          </div>   -->
+         
           <h1>Hello! My Name is</h1> <div class="name">Rohit Poduval</div>
           <h2>I work as a Product Manager at HotelKey, Inc</h2>
 
@@ -34,10 +33,10 @@
           <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
             <el-tab-pane label="Work Experience" name="first"> <Work/> </el-tab-pane>
             <el-tab-pane label="Skills" name="second"><Skills/></el-tab-pane>
-            <!-- <el-tab-pane label="Contact" name="third">Contact</el-tab-pane> -->
           </el-tabs>
         </div>
       </el-col>  
+      
       
     </el-row>
 
@@ -103,5 +102,28 @@ a {
 .main{
   display: block;
 }
+
+@media only screen and (max-width: 600px) {
+  .el-row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+  }
+  .profile{
+    margin: 20px;
+  }
+  .resume{
+    margin: 20px;
+  }
+
+  .el-col-13{
+    max-width: 100%;
+  }
+  .el-col-10{
+    max-width: 100%;
+  }
+}  
 
 </style>
