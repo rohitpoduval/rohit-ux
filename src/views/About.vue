@@ -1,27 +1,44 @@
 <template>
   <div class="main">
-    <div class="profile-logo">
-      <img alt="Vue logo" src="../assets/logo.jpg" style="height:100px; width:100px; border-radius: 80px;">
-    </div>  
-    <h1>Hello! My Name is Rohit Poduval</h1>
-    <h2>I work as a UX Designer at HotelKey, Inc</h2>
     
-    <div class="social">
-      <ul>
-        <li><a href="https://www.linkedin.com/in/rohit-poduval"><img alt="linkedIN logo" src="../assets/2.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
-        <li><a href="https://www.behance.net/rohitpoduval21"><img alt="behance logo" src="../assets/3.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
-                <li><a href="https://www.instagram.com/rohit.poduval/"><img alt="instagram logo" src="../assets/1.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
-      </ul>
+    <el-row :gutter=20>
+      <el-col :span="10"> 
+        <div class="profile">
+          <div class="profile-logo">
+            <img alt="Vue logo" src="../assets/logo.jpg" style="height:100px; width:100px; border-radius: 80px;">
+          </div>  
+          <h1>Hello! My Name is</h1> <div class="name">Rohit Poduval</div>
+          <h2>I work as a UX Designer at HotelKey, Inc</h2>
 
-      <div class="resume">
-        <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
-          <el-tab-pane label="Work Experience" name="first"> <Work/> </el-tab-pane>
-          <el-tab-pane label="Skills" name="second">Skills</el-tab-pane>
-          <el-tab-pane label="Contact" name="third">Contact</el-tab-pane>
-        </el-tabs>
-      </div>
+          <div class="social">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/rohit-poduval"><img alt="linkedIN logo" src="../assets/2.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
+              <li><a href="https://www.behance.net/rohitpoduval21"><img alt="behance logo" src="../assets/3.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
+              <li><a href="https://www.instagram.com/rohit.poduval/"><img alt="instagram logo" src="../assets/1.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
+            </ul>
+          </div>
 
-    </div>
+          
+
+
+        </div> 
+      </el-col>
+
+      <el-col :span="13">
+        <div class="resume">
+          <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
+            <el-tab-pane label="Work Experience" name="first"> <Work/> </el-tab-pane>
+            <el-tab-pane label="Skills" name="second">Skills</el-tab-pane>
+            <el-tab-pane label="Contact" name="third">Contact</el-tab-pane>
+          </el-tabs>
+        </div>
+      </el-col>  
+      
+    </el-row>
+
+   
+    
+
 
    
 
@@ -36,11 +53,24 @@ export default {
   components: { Work },
   props: {
     msg: String
+  },
+
+  data(){
+    return{
+      activeName: 'first'
+    }
   }
+
 }
 </script>
 
 <style scoped>
+
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
 h3 {
   margin: 40px 0 0;
 }
@@ -56,4 +86,16 @@ li {
 a {
   color: #42b983;
 }
+
+.name{
+  color: #42b983;
+  font-size: 2em;
+  font-weight: bold;
+  display: block;
+}
+
+.main{
+  display: block;
+}
+
 </style>
