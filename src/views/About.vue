@@ -4,11 +4,11 @@
     <el-row :gutter=20>
       <el-col :span="10"> 
         <div class="profile">
-          <div class="profile-logo">
+          <!-- <div class="profile-logo">
             <img alt="Vue logo" src="../assets/logo.jpg" style="height:100px; width:100px; border-radius: 80px;">
-          </div>  
+          </div>   -->
           <h1>Hello! My Name is</h1> <div class="name">Rohit Poduval</div>
-          <h2>I work as a UX Designer at HotelKey, Inc</h2>
+          <h2>I work as a Product Manager at HotelKey, Inc</h2>
 
           <div class="social">
             <ul>
@@ -17,6 +17,11 @@
               <li><a href="https://www.instagram.com/rohit.poduval/"><img alt="instagram logo" src="../assets/1.jpg" style="height:36px; width:36px; border-radius: 80px;"></a></li>
             </ul>
           </div>
+
+          <div class="download">
+            <a target="_blank" style="text-decoration: none" href="https://drive.google.com/file/d/1wKq1BD9EpznCBo-T1BSARQNi1ylLdTNu/view?usp=sharing"><el-button type="primary" plain>Download CV</el-button></a>
+          </div>
+
 
           
 
@@ -28,8 +33,8 @@
         <div class="resume">
           <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
             <el-tab-pane label="Work Experience" name="first"> <Work/> </el-tab-pane>
-            <el-tab-pane label="Skills" name="second">Skills</el-tab-pane>
-            <el-tab-pane label="Contact" name="third">Contact</el-tab-pane>
+            <el-tab-pane label="Skills" name="second"><Skills/></el-tab-pane>
+            <!-- <el-tab-pane label="Contact" name="third">Contact</el-tab-pane> -->
           </el-tabs>
         </div>
       </el-col>  
@@ -47,10 +52,11 @@
 
 <script>
 import Work from './Work.vue'
+import Skills from './Skills.vue'
 
 export default {
   name: 'HelloWorld',
-  components: { Work },
+  components: { Work, Skills },
   props: {
     msg: String
   },
