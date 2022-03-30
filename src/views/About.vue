@@ -40,6 +40,11 @@
       
     </el-row>
 
+    <div class="news">
+      <News/>
+    </div>
+     
+
    
     
 
@@ -52,10 +57,11 @@
 <script>
 import Work from './Work.vue'
 import Skills from './Skills.vue'
+import News from './News.vue'
 
 export default {
   name: 'HelloWorld',
-  components: { Work, Skills },
+  components: { Work, Skills, News},
   props: {
     msg: String
   },
@@ -102,6 +108,10 @@ a {
 .main{
   display: block;
 }
+
+.news{
+    margin-top: 60px;
+  }
 
 @media only screen and (max-width: 600px) {
   .el-row{
