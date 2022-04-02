@@ -10,7 +10,7 @@
                 <el-card :body-style="{ padding: '0px' }">
                     <img :src="item.imageUrl" class="image"/>
                     <div class="title">
-                        <span>{{ item.author }}</span>
+                        <span>{{ item.title }}</span>
                         <div class="bottom">
                             <time class="time">{{ item.date }}</time>
                             <el-button type="primary" size="large" class="button">View on Behance</el-button>
@@ -24,7 +24,6 @@
 
 <script>
 
-import axios from 'axios'
 
 export default {
     name: 'News',
@@ -32,19 +31,10 @@ export default {
     data(){
       return{
         loading: false,
-        news:''
+        news: []
         }
-    },
-      
-    mounted() {
-        this.loading = true; 
-        axios.get('https://inshortsapi.vercel.app/news?category=science')
-        .then((resp) => {
-        this.news = resp.data.data;
-        this.loading = false; 
-        })
-    },
-}
+    }
+}    
 
 </script>
 
