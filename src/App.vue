@@ -1,14 +1,14 @@
 <template>
-  <About/>
+  <Login/>
 </template>
 
 <script>
-import About from './views/About.vue'
+import About from './views/Login.vue'
 
 export default {
   name: 'App',
   components: {
-    About
+    Login
   }
 }
 
