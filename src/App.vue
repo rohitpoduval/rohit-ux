@@ -1,14 +1,14 @@
 <template>
-  <Login/>
+  <Search/>
 </template>
 
 <script>
-import Login from './views/Login.vue'
+import Search from './views/Search.vue'
 
 export default {
   name: 'App',
   components: {
-    Login
+    Search
   }
 }
 
